@@ -1,0 +1,18 @@
+# This config file routes the git to correct GitHub account - Debashis Paul
+# Default GitHub (send2deb account)
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa_send2deb
+
+# GitHub account for admin@debdroid.com 
+Host github-debdroid
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa_debdroid
+
+# GitHub account for pdroid84 
+Host github-pdroid84
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa

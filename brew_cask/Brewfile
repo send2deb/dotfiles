@@ -1,0 +1,128 @@
+# Brew file for brew cask  packages (i.e. Mac applications)
+# Add / remove item as per need
+
+# Adobe Acrobat Reader DC
+cask "adobe-acrobat-reader"
+# AirDroid - used to connect mobile with PC
+cask "airdroid"
+# Alfred - better than spotlight
+cask "alfred"
+# Android File Transfer
+cask "android-file-transfer"
+# AndroidTool for Mac - for designer and developer
+cask "androidtool"
+# Android SDK Platform-Tools
+cask "android-platform-tools"
+# Android sdk
+cask "android-sdk"
+# Android Studio - My favorite!
+cask "android-studio"
+# Preview version of Android Studio - I'm an Android developer after all!!
+cask "caskroom/versions/android-studio-preview"
+# Appcleaner - nice tool to uninstall app
+cask "appcleaner"
+# Atom text editor
+cask "atom"
+# Code editor (similar to Sublime, Atom)
+cask "brackets"
+# Mac cheatsheet - Press and hold command for the magic!
+cask "cheatsheet"
+# Offline tehcnial resources
+cask "dash"
+# Containerization / virtualization tool
+cask "docker"
+# Dropbox
+cask "dropbox"
+# Eclipse IDE
+cask "eclipse-java"
+# File transfer tool
+cask "filezilla"
+# Best web browser
+cask "firefox"
+# For developer's eyes!
+cask "flux"
+# Android emulator
+cask "genymotion"
+# Image editor
+cask "gimp"
+# Goggle drive
+cask "google-backup-and-sync"
+# Most popular web browser
+cask "google-chrome"
+# To improve English writing
+cask "grammarly"
+# Vector graphic editor
+cask "inkscape"
+# IntelliJ IDE
+cask "intellij-idea-ce"
+# Best Terminal
+cask "iterm2"
+# Floating web browser for Mac
+cask "jadengeller-helium" 
+# PAssword manager
+cask "lastpass"
+# Network watcher
+cask "little-snitch"
+# MarkDown editor
+cask "macdown"
+# Anti-virus for Mac
+cask "malwarebytes"
+# Desktop Google Player
+cask "marshallofsound-google-play-music-player"
+# Heap analyser
+cask "mat"
+# Quickview plugin
+cask "qlcolorcode"
+# Quickview plugin
+cask "qlimagesize"
+# Quickview plugin
+cask "qlmarkdown"
+# Quickview plugin
+cask "qlstephen"
+# Quickview plugin
+cask "qlvideo"
+# Quickview plugin
+cask "quicklook-json"
+# Quickview plugin
+cask "quicklookase"
+# Shortcut to control window
+cask "spectacle"
+# Skype
+cask "skype"
+# Skype business
+cask "skype-for-business"
+# Slack
+cask "slack"
+# Git gui by Atallasian
+cask "sourcetree"
+# Free Music
+cask "spotify"
+# Favorite text editor
+cask "sublime-text"
+# Package checker
+cask "suspicious-package"
+# Text editor
+cask "textmate"
+# Best file transfer for MAc
+cask "transmit"
+# Developer's tool - Linux box
+cask "vagrant"
+# Oracle virtual box
+cask "virtualbox"
+# Qucklook plugin
+cask "webpquicklook"
+# Whatsapp desktop
+cask "whatsapp"
+# Zip and RAR for Mac
+cask "zipeg"
+
+# Fonts
+cask "caskroom/fonts/font-awesome-terminal-fonts"
+cask "caskroom/fonts/font-fontawesome"
+cask "caskroom/fonts/font-hack"
+cask "caskroom/fonts/font-inconsolata-dz-for-powerline"
+cask "caskroom/fonts/font-inconsolata-for-powerline"
+cask "caskroom/fonts/font-inconsolata-g-for-powerline"
+cask "caskroom/fonts/font-roboto-mono"
+cask "caskroom/fonts/font-roboto-mono-for-powerline"
+cask "caskroom/fonts/font-source-code-pro"

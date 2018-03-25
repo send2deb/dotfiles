@@ -1,0 +1,254 @@
+#- - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# 
+# Descriptions: This file contains all BASH configurations
+# Debashis Paul
+#
+# Sections:
+# 1. Basic common tasks
+# 2. Environment Variables
+# 3. PATH Override
+# 4. adb related functions and shotcuts
+#- - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+#- - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# 1. Basic common tasks
+#- - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Read global .bashrc file if it exists
+if [ -f /etc/bashrc ]; then
+   source /etc/bashrc
+fi
+
+#Prevent overwriting files
+set -o noclobber
+
+#Shortcut for PWD
+alias p="pwd"
+
+#Use "lsl" for "ls -l"
+alias lsl="ls -l"
+
+# Preferred 'ls' implementation
+alias ll='ls -FGlAhp'
+
+#Use "lla" for "ll -a" (ll is an alias)
+alias lla="ll -a"
+
+#Use "cl" for "curl -L"
+alias cl="curl -L"
+
+#Use "now" for 'date + "%T"'
+alias now='date + "%T"'
+
+#Always do interactive remove
+alias rm='rm -i'
+
+#Shortcut for gradle command
+alias gr='gradle'
+
+#Shortcut for gradle quite mode
+alias grq='gradle -q'
+
+#Shortcut for gradle tasks
+alias grt='gradle tasks'
+
+#Shortcut for gradle tasks all
+alias grta='gradle tasks --all'
+
+#Show last few commands using shortcut
+alias h='history | tail'
+
+#Shortcut for read-write-execute (owner) - read-execute (group) - read-execute (all)
+alias ch='chmod 755'
+
+# Preferred 'cp' implementation
+alias cp='cp -iv' 
+
+# Preferred 'mv' implementation
+alias mv='mv -iv' 
+
+#Preferred 'CD' options
+alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
+alias ..='cd ../'                           # Go back 1 directory level
+alias ...='cd ../../'                       # Go back 2 directory levels
+alias .3='cd ../../../'                     # Go back 3 directory levels
+alias .4='cd ../../../../'                  # Go back 4 directory levels
+alias .5='cd ../../../../../'               # Go back 5 directory levels
+alias .6='cd ../../../../../../'            # Go back 6 directory levels
+
+# Enable tab completion for git command
+source ~/git-completion.bash
+
+# Enable tab completion for gradle commandl
+#Is not working, so commenting out
+#source ~/gradle-tab-completion.bash
+
+# colors!
+green="\[\033[0;32m\]"
+blue="\[\033[0;34m\]"
+purple="\[\033[0;35m\]"
+red="\[\033[0;31m\]"
+reset="\[\033[0m\]"
+
+# Change command prompt to firendly color and git information
+source ~/git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=1
+# '\u' adds the name of the current user to the prompt
+# '\$(__git_ps1)' adds git-related stuff
+# '\W' adds the name of the current directory
+# 't' Current time, expressed as HH:MM:SS
+# '\$' Use # if logged in as root, otherwise use $
+export PS1="$purple\u$green\$(__git_ps1)$blue \W $red \t \$ $reset"
+
+#Shortcut to launch text editor Sublime
+alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+
+#Shortcut to launch text editor Atom
+alias atom="/Applications/Atom.app/Contents/MacOS/Atom --wait"
+
+#- - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# 2. Environment Variables
+#- - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+JAVA_HOME=$(/usr/libexec/java_home)
+CATALINA_HOME=/usr/local/apache-tomcat-7.0.64
+ANDROID_HOME=/Users/debashispaul/Library/Android/sdk
+
+#- - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# 3. PATH override
+#- - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#Override the PATH for android-sdk platform tools (Commented the below as using ANDROID_HOME)
+#export PATH=$PATH:/Users/debashispaul/Library/Android/sdk/platform-tools/
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+#Override the PATH for other android-sdk tools (e.g. lint)
+#export PATH=$PATH:/Users/debashispaul/Library/Android/sdk/tools/ (Commented the below as using ANDROID_HOME)
+export PATH=$PATH:$ANDROID_HOME/tools
+#Override the PATH to use regular git instead of Apple provided Xcode git
+export PATH=/usr/local/bin:$PATH
+#Override the PATH for sonar-runner (this is to run sonar-scanner from anywhere)
+export PATH=$PATH:/Users/debashispaul/sonar-scanner-3.0.3.778-macosx/bin
+
+#- - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# 2. adb related functions and shotcuts
+#- - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#Following functions work like alias
+#This is help function to display available customized adb commands
+adbh() {
+		echo "Welcome $USER"
+		echo "Here are the commands for adb you have customized:"
+		echo
+		echo "'adbi arg' -> To install an application. Command must run from inside the main application folder. The 'arg' is the package name."
+		echo
+		echo "'adbs arg1 [arg2]' -> To start an application. The 'arg1' is the package name. The 'arg2' is main activity name, if not provided then 'MainActivity' is used."
+		echo
+		echo "'adbr arg1 [arg2]' -> To restart an application. The 'arg1' is the package name. The 'arg2' is main activity name, if not provided then 'MainActivity' is used."
+		echo
+		echo "'adbu arg' -> To uninstall an application. The 'arg' is the package name."
+}
+
+#This function checks if a package name is valid - ideally the package name should have two '.'s
+check_package_name()  
+{
+	if [[ $1 == *.*.* ]]
+	then
+		return 0
+	else
+		echo "Looks like invalid pacakge name! Please check."
+		return 1
+	fi
+}
+
+#Preferred way to install an app using adb (must be run from inside the app main directory)
+adbi() 
+{
+	if [ $# -eq 0 ]
+	then
+		echo "Please provide the name of the package you want to install. Run 'adbh' for more help."
+	else
+		check_package_name $1
+		ret=$?
+		if [[ $ret -eq 1 ]]
+		then
+			return $?
+		else
+			adb push app/build/outputs/apk/debug/app-debug.apk /data/local/tmp/"$1"
+		 	adb shell pm install -t -r /data/local/tmp/"$1"
+		fi
+	fi
+}
+
+#Preferred way to start an app using adb
+adbs() 
+{
+	if [ $# -eq 0 ]
+	then
+		echo "Package name must be provided. Run 'adbh' for more help."
+	elif [ $# -eq 1 ] 
+	then
+		check_package_name $1
+		ret=$?
+		if [[ $ret -eq 1 ]]
+		then
+			return $?
+		else
+			echo "Package name is $1. Going to start the activity 'MainActivity' of package $1. If your activity name is different then provide that as second argument. Run 'adbh' for more help."
+			adb shell am start -n "$1"/"$1".MainActivity -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+		fi
+	else
+		check_package_name $1
+		ret=$?
+		if [[ $ret -eq 1 ]]
+		then
+			return $?
+		else
+			adb shell am start -n "$1"/"$1"."$2" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+		fi
+	fi
+}
+
+#Preferred way to re-start an app using adb
+adbr() 
+{
+	if [ $# -eq 0 ]
+	then
+		echo "Package name must be provided. Run 'adbh' for more help."
+	elif [ $# -eq 1 ] 
+	then
+		check_package_name $1
+		ret=$?
+		if [[ $ret -eq 1 ]]
+		then
+			return $?
+		else
+			echo "Package name is $1. Going to start the activity 'MainActivity' of package $1. If your activity name is different then provide that as second argument. Run 'adbh' for more help."
+			adb shell am force-stop "$1"
+			adb shell am start -n "$1"/"$1".MainActivity -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+		fi
+	else
+		check_package_name $1
+		ret=$?
+		if [[ $ret -eq 1 ]]
+		then
+			return $?
+		else
+			adb shell am force-stop "$1"
+			adb shell am start -n "$1"/"$1"."$2" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+		fi
+	fi
+}
+
+#Preferred way to uninstall an app using adb
+adbu() 
+{
+	if [ $# -eq 0 ]
+	then
+		echo "Please provide the name of the package you want to uninstall. Run 'adbh' for more help."
+	else
+		check_package_name $1
+		ret=$?
+		if [[ $ret -eq 1 ]]
+		then
+			return $?
+		else
+			adb shell pm uninstall -k "$1"
+		fi
+	fi
+}

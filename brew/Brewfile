@@ -1,0 +1,95 @@
+# Brew file for core brew packages
+# Add / remove item as per need
+
+# Install the java first
+cask "java"
+# Similar to grep
+brew "ack"
+# Latest bash
+brew "bash"
+# Programmable completion for Bash
+brew "bash-completion"
+# Bash & Fish completion for brew-cask
+brew "brew-cask-completion"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Configurable talking characters in ASCII art
+brew "cowsay"
+# Download from internet
+brew "curl"
+# Good-lookin' diffs with diff-highlight and more
+brew "diff-so-fancy"
+# Tool for managing dock items
+brew "dockutil"
+# Collection of GNU find, xargs, and locate
+brew "findutils"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
+# XML-based font configuration API for X Windows
+brew "fontconfig"
+# Access GitHub's .gitignore boilerplates
+brew "gibo"
+# Distributed revision control system
+brew "git"
+# Extensions to follow Vincent Driessen's branching model
+brew "git-flow"
+# Build system based on the Groovy language
+brew "gradle"
+# Bash and Zsh completion for Gradle
+brew "gradle-completion"
+# Java-based scripting language
+brew "groovy"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
+# Extendable open source continuous integration server
+brew "jenkins", restart_service: true
+# SSL/TLS cryptography library
+brew "openssl"
+# Keep your Mac's application settings in sync
+brew "mackup"
+# GUI for vim, made for macOS
+brew "macvim"
+# Mac App Store command-line interface
+brew "mas"
+# Powerful paging program
+brew "most"
+# Port scanning utility for large networks
+brew "nmap"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
+# Simplistic interactive filtering tool
+brew "peco"
+# Colored logcat script to show entries only for specified app
+brew "pidcat"
+# Shortcut for the 'ps aux | grep' idiom
+brew "psgrep"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# Terminal multiplexer
+brew "tmux"
+# CLI tool that moves files or folder to the trash
+brew "trash"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Command-line unarchiving tools supporting multiple formats
+brew "unar"
+# Bash completion for Vagrant
+brew "vagrant-completion"
+# Vi 'workalike' with many additional features
+brew "vim"
+# Internet file retriever
+brew "wget"
+# Show the current WiFi network password
+brew "wifi-password"
+# Download YouTube videos from the command-line
+brew "youtube-dl"
+# UNIX shell (command interpreter) - Better shell
+brew "zsh"
+# Fish-like fast/unobtrusive auto suggestions for zsh
+brew "zsh-autosuggestions"
+# Additional completion definitions for zsh
+brew "zsh-completions"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
+# General-purpose data compression with high compression ratio
+brew "xz"

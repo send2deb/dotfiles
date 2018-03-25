@@ -1,0 +1,24 @@
+# Brew file for Mac Appstore Applications)
+# Add / remove item as per need
+# Brew uses the 'mas' (i.e. Mac App Store command-line interface) to install / update the applications
+# The id's are Mac appstore id and it's a mandatory field
+
+mas "Evernote", id: 406056744
+mas "GarageBand", id: 682658836
+mas "iBooks Author", id: 490152466
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Kindle", id: 405399194
+mas "MagicanPaster", id: 427378978
+mas "Numbers", id: 409203825
+mas "OneDrive", id: 823766827
+mas "Pages", id: 409201541
+mas "Pocket", id: 568494494
+mas "SketchBook", id: 863486266
+mas "SQLPro for SQLite (Lite)", id: 635299994
+mas "The Unarchiver", id: 425424353
+mas "Xcode", id: 497799835
+mas "XMenu", id: 419332741
+mas "DeskApp for YouTube", id: 1180531112
+mas "Microsoft OneNote", id: 784801555
+mas "GIPHY CAPTURE (3.8)", id: 668208984
