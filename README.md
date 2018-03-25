@@ -6,6 +6,8 @@ It will automatically install useful developers tools, apps, Mac appstore applic
 
 It can be run in automated or interactive mode. Each step can be skip in interactive mode. Helpful messages are shown before running any step.
 
+![](https://github.com/send2deb/dotfiles/blob/master/images/dotfile_demo_screenshot.png)
+
 Installation
 -
 **Warning:** This dotfiles is solely written for my own settings. If you want to give it a try then fork it. Review the code and modify based on your need before use. The installation needs SUDO and you should review everything it does. You are responsible for everything the scripts does to your machine.
@@ -29,19 +31,19 @@ Features
 * [Install or update Mac appstore applications](#install-or-update-mac-appstore-applications)
 * [Mac system preference configuration](#mac-system-preference-configuration)
 
-<span id="#bash-configuration-for-terminal"/>
 Bash configuration for Terminal
 -
+
 I have my own configuration, aliases and other setup which you can check and use. Or use your own and maintain in ~/.dotfiles. Follow the instructions while install.
 
-<span id="#home-brew-install-or-upgrade"/>
 Homebrew install or upgrade
 -
+
 It will install the Homebrew if not already installed on the machine. If it's already there then it will upgrade.
 
-<span id="#brew-core-packages-installl"/>
 Brew core packages install
 -
+
 It will install the following brew core packages(Refer the file - ~/.dotfiles/brew/Brewfile):
 
 * ack 
@@ -90,9 +92,9 @@ It will install the following brew core packages(Refer the file - ~/.dotfiles/br
 * zsh-syntax-highlighting 
 * xz 
 
-<span id="#brew-cask-packages-install"/>
 Brew cask packages install
 -
+
 It will install the following brew cask packages (Refer the file - ~/.dotfiles/brew_cask/Brewfile):
 
 * adobe-acrobat-reader 
@@ -163,24 +165,24 @@ It will install the following brew cask packages (Refer the file - ~/.dotfiles/b
 * font-roboto-mono-for-powerline 
 * font-source-code-pro 
 
-<span id="#zsh-configuration-for-iterml"/>
 ZSH configuration for iTerm
 -
+
 I have my own configuration, aliases and other setup for zsh which you can check and use. Or use your own and maintain in ~/.dotfiles. Follow the instructions while install.
 
-<span id="#git-configuration"/>
 Git configuration
 -
+
 I maintain my global .gitconfig and .gitignore_global in .dotfiles. You can also do the same by following the instructions while install.
 
-<span id="#ssh-configuration"/>
 SSH configuration
 -
+
 I maintain my global ssh config file in .dotfiles. You can also do the same by following the instructions while install.
 
-<span id="#install-or-update-mac-appstore-applications"/>
 Install or update Mac appstore applications
 -
+
 It will install or update the following Mac appstore applications (Refer the file - ~/.dotfiles/brew_cask/Brewfile):
 
 * Evernote 
@@ -203,9 +205,9 @@ It will install or update the following Mac appstore applications (Refer the fil
 * Microsoft OneNote 
 * GIPHY CAPTURE
 
-<span id="#mac-system-preference-configuration"/>
 Mac system preference configuration
 -
+
 It will set the following Mas system preferences (Refer the script - ~/.dotfiles/brew_cask/mac_system_config.sh):
 
 * Enable auto update
