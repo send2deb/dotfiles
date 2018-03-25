@@ -1,5 +1,6 @@
 # Debashis's dotfiles
 -
+
 This can be used to configure a new Mac system or an existing one.
 
 It will automatically install useful developers tools, apps, Mac appstore applications, configure terminal & iTerm and setup system preferences. 
@@ -14,7 +15,7 @@ Installation
 
 Clone the git repository to ~/.dotfiles and run ./install.sh.
 
-> git clone https://github.com/send2deb/dotfiles ~/.dotfiles  
+> git clone --recursive https://github.com/send2deb/dotfiles ~/.dotfiles  
 > cd ~/.dotfiles  
 > ./install.sh
 
@@ -254,6 +255,11 @@ It will set the following Mas system preferences (Refer the script - ~/.dotfiles
 * Hotcorners - Bottom left screen corner → Start screen saver
 * Save screenshots to the desktop
 * Save screenshots in PNG format
+
+Watch me running
+-
+
+![](https://github.com/send2deb/dotfiles/blob/master/images/dotfiles_demo_run.gif)
 
 Contributions
 -
