@@ -1,13 +1,10 @@
 # Debashis's dotfiles
--
 
-This can be used to configure a new Mac system or an existing one.
-
-It will automatically install useful developers tools, apps, Mac appstore applications, configure terminal & iTerm and setup system preferences. 
+This can be used to configure a new Mac system or an existing one. It will automatically install useful developers tools, apps, Mac appstore applications, configure terminal & iTerm and setup system preferences. 
 
 It can be run in automated or interactive mode. Each step can be skip in interactive mode. Helpful messages are shown before running any step.
 
-![](https://github.com/send2deb/dotfiles/blob/master/images/dotfile_demo_screenshot.png)
+![](https://user-images.githubusercontent.com/33470591/37882016-343e5392-3097-11e8-9b73-a41cfa5b5dd4.png?raw=true)
 
 Installation
 -
@@ -45,7 +42,7 @@ It will install the Homebrew if not already installed on the machine. If it's al
 Brew core packages install
 -
 
-It will install the following brew core packages(Refer the file - ~/.dotfiles/brew/Brewfile):
+It will install the following brew core packages(Refer the [Brewfile](https://github.com/send2deb/dotfiles/blob/master/brew/Brewfile) file):
 
 * ack 
 * bash 
@@ -96,7 +93,7 @@ It will install the following brew core packages(Refer the file - ~/.dotfiles/br
 Brew cask packages install
 -
 
-It will install the following brew cask packages (Refer the file - ~/.dotfiles/brew_cask/Brewfile):
+It will install the following brew cask packages (Refer the [Brewfile](https://github.com/send2deb/dotfiles/blob/master/brew_cask/Brewfile) file):
 
 * adobe-acrobat-reader 
 * airdroid 
@@ -184,7 +181,7 @@ I maintain my global ssh config file in .dotfiles. You can also do the same by f
 Install or update Mac appstore applications
 -
 
-It will install or update the following Mac appstore applications (Refer the file - ~/.dotfiles/brew_cask/Brewfile):
+It will install or update the following Mac appstore applications (Refer the [Brewfile](https://github.com/send2deb/dotfiles/blob/master/macos/Brewfile)):
 
 * Evernote 
 * GarageBand 
@@ -209,7 +206,7 @@ It will install or update the following Mac appstore applications (Refer the fil
 Mac system preference configuration
 -
 
-It will set the following Mas system preferences (Refer the script - ~/.dotfiles/brew_cask/mac_system_config.sh):
+It will set the following Mas system preferences (Refer the Mac system preference configuration [script](https://github.com/send2deb/dotfiles/blob/master/scripts/mac_system_config.sh)):
 
 * Enable auto update
 * Enable app update install
@@ -259,7 +256,7 @@ It will set the following Mas system preferences (Refer the script - ~/.dotfiles
 Watch me running
 -
 
-![](https://github.com/send2deb/dotfiles/blob/master/images/dotfiles_demo_run.gif)
+![](https://user-images.githubusercontent.com/33470591/37882031-52df87bc-3097-11e8-9170-3b8c9bda0d82.gif?raw=true)
 
 Contributions
 -
@@ -268,7 +265,7 @@ Contributions are welcome. Please fork and create a pull request with details. A
 
 Reference
 -
-* [https://github.com/atomantic/dotfiles#settings](https://github.com/atomantic/dotfiles#settings)
+* [https://github.com/atomantic/dotfiles](https://github.com/atomantic/dotfiles)
 * [https://github.com/mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
 * [https://github.com/ashishb/dotfiles](https://github.com/ashishb/dotfiles)
 * [https://github.com/holman/dotfiles](https://github.com/holman/dotfiles)
