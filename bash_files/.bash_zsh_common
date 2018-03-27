@@ -148,7 +148,12 @@ adbi()
 		if [[ $ret -eq 1 ]]; then
 			return $?
 		else
-			adb push app/build/outputs/apk/debug/app-debug.apk /data/local/tmp/"$1"
+			# The debug apk can be isnide of /debug folder or just inside apk - so handling that here
+			if [ -d $PWD/app/build/outputs/apk/debug ]; then
+				adb push $PWD/app/build/outputs/apk/debug/app-debug.apk /data/local/tmp/"$1"
+		 	else
+		 		adb push $PWD/app/build/outputs/apk/app-debug.apk /data/local/tmp/"$1"
+		 	fi
 		 	adb shell pm install -t -r /data/local/tmp/"$1"
 		fi
 	fi
