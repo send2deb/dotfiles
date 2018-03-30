@@ -7,6 +7,8 @@ cask "adobe-acrobat-reader"
 cask "airdroid"
 # Alfred - better than spotlight
 cask "alfred"
+# Package manager- Python - Not using
+# cask "anaconda"
 # Android File Transfer
 cask "android-file-transfer"
 # AndroidTool for Mac - for designer and developer
@@ -71,6 +73,8 @@ cask "malwarebytes"
 cask "marshallofsound-google-play-music-player"
 # Heap analyser
 cask "mat"
+# IDE for Python
+cask "pycharm-ce"
 # Quickview plugin
 cask "qlcolorcode"
 # Quickview plugin
@@ -109,6 +113,8 @@ cask "transmit"
 cask "vagrant"
 # Oracle virtual box
 cask "virtualbox"
+# Android emulator
+cask "vysor"
 # Qucklook plugin
 cask "webpquicklook"
 # Whatsapp desktop

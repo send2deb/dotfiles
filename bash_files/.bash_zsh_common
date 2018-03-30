@@ -9,6 +9,7 @@
 #              'zsh' (used by iTerm). The configurations are copied from original '.bashrc' file and modifed for the purpose.			 #
 #																																		 #
 # 18-Mar-2018: Added 5. Useful Functions section 																						 #
+# 30-Mar-2018: Added PATH for anaconda    		 																						 #
 #              																															 #
 #- - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -#
 # Sections:																																 #
@@ -107,6 +108,8 @@ export PATH=$PATH:$ANDROID_HOME/tools
 # export PATH=/usr/local/bin:$PATH
 #Override the PATH for sonar-runner (this is to run sonar-scanner from anywhere)
 export PATH=$PATH:/Users/debashispaul/sonar-scanner-3.0.3.778-macosx/bin
+#Override the PATH to use anaconda
+export PATH=$PATH:/usr/local/anaconda3/bin
 
 #- - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -#
 # 4. Android adb Related Functions & Customization																						 #
