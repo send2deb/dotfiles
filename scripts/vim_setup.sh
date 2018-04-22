@@ -25,5 +25,5 @@ if [ $run_mode = $run_mode_interactive ]; then
   fi
 fi
 
-debdroid "I'm still not a tue unix lover :( !! I do not use vim much but I know it's a tool for true unix lover and one day I will be for sure!"
+debdroid "I'm still not a true unix lover :( !! I do not use vim much but I know it's a tool for true unix lover and one day I will be for sure!"
 debdroid "Till that day, no setup for vim."
