@@ -59,6 +59,9 @@ alias grt='gradle tasks'
 #Shortcut for gradle tasks all
 alias grta='gradle tasks --all'
 
+#Shortcut for gradle task execution console display in old Gradle way
+alias grc='gradle --console=plain'
+
 #Show last few commands using shortcut
 alias h='history | tail'
 
