@@ -113,6 +113,8 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:/Users/debashispaul/sonar-scanner-3.0.3.778-macosx/bin
 #Override the PATH to use anaconda
 export PATH=$PATH:/usr/local/anaconda3/bin
+#Override the PATH to Google gcould sdk
+export PATH=$PATH:/Users/debashispaul/google-cloud-sdk/bin
 
 #- - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -#
 # 4. Android adb Related Functions & Customization																						 #

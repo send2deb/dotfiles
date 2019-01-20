@@ -1,4 +1,4 @@
-# This config file routes the git to correct GitHub account - Debashis Paul
+# This config file routes the ssh to correct host/server - Debashis Paul
 # Default GitHub (send2deb account)
 Host github.com
   HostName github.com
@@ -16,3 +16,10 @@ Host github-pdroid84
   HostName github.com
   User git
   IdentityFile ~/.ssh/id_rsa
+
+# Bluehost account for debdrwxu 
+Host bluehost
+  HostName 162.215.253.110
+  Port 22
+  User debdrwxu
+  IdentityFile ~/.ssh/id_rsa_bluehost
