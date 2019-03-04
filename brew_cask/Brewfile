@@ -91,6 +91,8 @@ cask "quicklook-json"
 cask "quicklookase"
 # Shortcut to control window
 cask "spectacle"
+# Scout for saas transpile
+cask "scout"
 # Skype
 cask "skype"
 # Skype business
@@ -99,6 +101,8 @@ cask "skype-for-business"
 cask "slack"
 # Git gui by Atallasian
 cask "sourcetree"
+# Git spectacle
+cask "spectacle"
 # Free Music
 cask "spotify"
 # Favorite text editor
@@ -113,6 +117,8 @@ cask "transmit"
 cask "vagrant"
 # Oracle virtual box
 cask "virtualbox"
+# IDE for web design and other
+cask "visual-studio-code"
 # Android emulator
 cask "vysor"
 # Qucklook plugin

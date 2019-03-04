@@ -5,18 +5,40 @@
 cask "java"
 # Similar to grep
 brew "ack"
+# Apache Portable Runtime library
+brew "apr"
+# Companion library to apr
+brew "apr-util"
+# Password hashing library and CLI utility
+brew "argon2"
+# Spell checker with better logic than ispell
+brew "aspell"
+# Automatic configure script builder
+brew "autoconf"
 # Latest bash
 brew "bash"
 # Programmable completion for Bash
 brew "bash-completion"
 # Bash & Fish completion for brew-cask
 brew "brew-cask-completion"
+# Generic-purpose lossless compression algorithm by Google
+brew "brotli"
+# Asynchronous DNS library
+brew "c-ares"
+# Dependency Manager for PHP
+brew "composer"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Configurable talking characters in ASCII art
 brew "cowsay"
+# Tool for browsing source code
+brew "cscope"
 # Download from internet
 brew "curl"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl-openssl"
+# The Dart SDK
+brew "dart"
 # Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
 # Tool for managing dock items
@@ -27,44 +49,165 @@ brew "findutils"
 brew "fish"
 # XML-based font configuration API for X Windows
 brew "fontconfig"
+# Libraries to talk to Microsoft SQL Server and Sybase databases
+brew "freetds"
+# Software library to render fonts
+brew "freetype"
+# GNU database manager
+brew "gdbm"
+# GNU internationalization (i18n) and localization (l10n) library
+brew "gettext"
 # Access GitHub's .gitignore boilerplates
 brew "gibo"
 # Distributed revision control system
 brew "git"
 # Extensions to follow Vincent Driessen's branching model
 brew "git-flow"
+# Core application library for C
+brew "glib"
+# GNU multiple precision arithmetic library
+brew "gmp"
 # Build system based on the Groovy language
 brew "gradle"
 # Bash and Zsh completion for Gradle
 brew "gradle-completion"
 # Java-based scripting language
 brew "groovy"
+# Convert source code to formatted text with syntax highlighting
+brew "highlight"
+# Apache HTTP server
+brew "httpd"
+# C/C++ and Java libraries for Unicode and globalization
+brew "icu4c"
+# OpenEXR ILM Base libraries
+brew "ilmbase"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
+# Integer Set Library for the polyhedral model
+brew "isl"
+# C library for encoding, decoding, and manipulating JSON
+brew "jansson"
+# malloc implementation emphasizing fragmentation avoidance
+brew "jemalloc"
+# Image manipulation library
+brew "jpeg"
+# Open h.265 video codec implementation
+brew "libde265"
+# Asynchronous event library
+brew "libev"
+# libevent
+brew "libevent"
+# Portable Foreign Function Interface library
+brew "libffi"
+# ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
+brew "libheif"
+# International domain name library
+brew "libidn"
+# International domain name library (IDNA2008, Punycode and TR46)
+brew "libidn2"
+# C library to parse Metalink XML files
+brew "libmetalink"
+# C library for the arithmetic of high precision complex numbers
+brew "libmpc"
+# LLVM's OpenMP runtime library
+brew "libomp"
+# Library for manipulating PNG images
+brew "libpng"
+# Postgres C API library
+brew "libpq"
+# NaCl networking and cryptography library
+brew "libsodium"
+# C library implementing the SSH2 protocol
+brew "libssh2"
+# TIFF library and utilities
+brew "libtiff"
+# Generic library support script
+brew "libtool"
+# C string library for manipulating Unicode strings
+brew "libunistring"
+# YAML Parser
+brew "libyaml"
+# C library for reading, creating, and modifying zip archives
+brew "libzip"
+# Color management engine supporting ICC profiles
+brew "little-cms2"
+# Powerful, lightweight programming language
+brew "lua"
 # Extendable open source continuous integration server
 brew "jenkins", restart_service: true
-# SSL/TLS cryptography library
-brew "openssl"
 # Keep your Mac's application settings in sync
 brew "mackup"
 # GUI for vim, made for macOS
 brew "macvim"
 # Mac App Store command-line interface
 brew "mas"
+# Java-based project management
+brew "maven"
 # Powerful paging program
 brew "most"
+# C library for multiple-precision floating-point computations
+brew "mpfr"
+# Open source relational database management system
+brew "mysql"
+# Text-based UI library
+brew "ncurses"
+# HTTP/2 C Library
+brew "nghttp2"
 # Port scanning utility for large networks
 brew "nmap"
+# Platform built on V8 to build network applications
+brew "node"
+# High dynamic-range image file format
+brew "openexr"
+#
+brew "openjpeg"
+# Library for JPEG-2000 image manipulation
+brew "openldap"
+# SSL/TLS cryptography library
+brew "openssl"
+brew "openssl@1.1"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
+# Perl compatible regular expressions library
+brew "pcre"
+# Perl compatible regular expressions library with a new API
+brew "pcre2"
 # Simplistic interactive filtering tool
 brew "peco"
+# Highly capable, feature-rich programming language
+brew "perl"
+# General-purpose scripting language
+brew "php"
+# Web interface for MySQL and MariaDB
+brew "phpmyadmin"
 # Colored logcat script to show entries only for specified app
 brew "pidcat"
+# Manage compile and link flags for libraries
+brew "pkg-config"
 # Shortcut for the 'ps aux | grep' idiom
 brew "psgrep"
+# Interpreted, interactive, object-oriented programming language
+brew "python"
+# Library for command-line editing
+brew "readline"
+# Tool for downloading RTMP streaming media
+brew "rtmpdump"
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
+# Library for creating multi-platform software
+brew "s-lang"
+# Stylesheet Preprocessor
+brew "sass"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
+# Tool to create intelligent and beautiful documentation
+brew "sphinx-doc"
+# Command-line interface for SQLite
+brew "sqlite"
+# User interface to the TELNET protocol (built from macOS Sierra sources)
+brew "telnet"
+# Granddaddy of HTML tools, with support for modern standards
+brew "tidy-html5"
 # Terminal multiplexer
 brew "tmux"
 # CLI tool that moves files or folder to the trash
@@ -73,14 +216,22 @@ brew "trash"
 brew "tree"
 # Command-line unarchiving tools supporting multiple formats
 brew "unar"
+# ODBC 3 connectivity for UNIX
+brew "unixodbc"
 # Bash completion for Vagrant
 brew "vagrant-completion"
 # Vi 'workalike' with many additional features
 brew "vim"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
 # Internet file retriever
 brew "wget"
 # Show the current WiFi network password
 brew "wifi-password"
+# H.265/HEVC encoder
+brew "x265"
+# General-purpose data compression with high compression ratio
+brew "xz"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
 # UNIX shell (command interpreter) - Better shell
@@ -91,5 +242,3 @@ brew "zsh-autosuggestions"
 brew "zsh-completions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
-# General-purpose data compression with high compression ratio
-brew "xz"
